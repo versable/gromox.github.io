@@ -1,0 +1,161 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gromox project webpage</title>
+</head>
+<style>
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(va9E4kDNxMZdWfMOD5Vvl4jL.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+	font-family: "Fira Sans", sans-serif;
+	margin: 0;
+	display: flex;
+}
+h1 { font-weight: bold; font-size: 36pt; color: #303030; }
+p { font-size: 16pt; }
+</style>
+
+<body bgcolor="#b0b0c0">
+
+<div class="sidenav" style="padding: 2em;">
+
+<!-- birds seem to be a recurring theme in mail software, just following suit -->
+<p><img src="gromox_bird_G2.png" border="0" /></p>
+
+</div>
+
+<div style="max-width: 64em; padding: 2em;">
+
+<h1>Welcome to the Gromox project webpage</h1>
+
+<p>Gromox is the central groupware server component of grommunio. It is capable of
+serving as a replacement for Microsoft Exchange and compatibles. Connectivity
+options include RPC/HTTP (Outlook Anywhere), MAPI/HTTP, IMAP, POP3, an
+SMTP-speaking LDA, and a PHP module with a Z-MAPI function subset.</p>
+
+<p>Gromox relies on other components to provide a sensibly complete mail
+system, such as Postfix as a mail transfer agent, and grommunio-admin for user
+management. A webmail client interface is available with grommunio-web. The
+grommunio Appliance ships these essentials and has a ready-to-run installation
+of Gromox.</p>
+
+<p>Support is available through grommunio GmbH and its partners. See <a
+href="https://grommunio.com/">https://grommunio.com/</a> for details.</p>
+
+<p>The source code repository and technical issue tracker can be found at
+<a
+href="https://github.com/grommunio/gromox">https://github.com/grommunio/gromox</a>.</p>
+
+<h2><a name="news"></a>News</h2>
+
+<ul>
+
+<li><b>2022-01-09</b>. Version 1.12 was released. kdb2mt's splice mode was
+improved to detect the mapping for Inbox, and the documentation about MRO field
+caveats was updated. pff2mt has received updates and scans more properties and
+recipients now. Alias resolution in the delivery(8gx) process was changed to no
+longer rely on the extra adaptor(8gx) process.
+<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.12">Expanded
+notes on GH</a>.</li>
+
+<li><b>2021-12-07</b>. Version 1.10 was released.
+Cached Mode now works with plaintext-only messages and messages whose
+recipients are incomplete.
+<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.10">Expanded
+notes on GH</a>.</li>
+
+<li><b>2021-11-27</b>. Version 1.9 was released. The kdb2mt importer's
+<tt>-s</tt> option now recognizes public stores. Incoming mail now has
+the Content-Disposition header respected with regards to inline/hidden
+attachments. Modifying embedded messages now properly saves the changes.
+<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.9">Expanded
+notes on GH</a>.</li>
+
+<li><b>2021-11-13</b>. Version 1.8 was released. A few fixes in vCard parsing,
+folder cleaning and offline mode were made.
+<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.8">Expanded
+notes on GH</a>.</li></li>
+
+<li><b>2021-11-07</b>. Version 1.7 was released. It improves importing from
+Zarafa/Kopano. Delivery to private shared stores is now recognized.
+<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.7">Expanded
+notes on GH</a>.</li></li>
+
+<li><b>2021-10-31</b>. Version 1.6 was released. This fixes a number of issues
+with gromox-delivery-queue/gromox-delivery where the older versions may
+generate invalid temporary files and then crash on it. An Out Of Office
+autorespond mechanism was added. The kdb2mt/mt2exm importer has seen updates.
+<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.6">Expanded
+notes on GH</a>.</li></li>
+
+<li><b>2021-10-08</b>. Version 1.4 was released. This cures an Outlook crash
+in conjunction with OP_MOVE-type Inbox Rules. pff2mt now skips bogus MAPI
+properties and continues rather than exiting. <a
+href="https://github.com/grommunio/gromox/releases/tag/gromox-1.4">Expanded
+notes on GH</a>.</li>
+
+<li><b>2021-09-01</b>. Version 1.2 was released. This includes a much improved
+gromox-kdb2mt (importer for Kopano database/mailboxes) which fixes bugs in the
+named property resolution for appointment/contact data, supports embedded
+message objects, and supports reading gzip attachments. <a
+href="https://github.com/grommunio/gromox/releases/tag/gromox-1.2">Expanded
+notes on GH</a>.</li>
+
+<li><b>2021-08-06</b>. Version 1.0 was released. This comes with a reworked
+PFF command line interface as well as an importer for Kopano mailboxes.</li>
+
+<li><b>2021-07-13</b>. Version 0.27 was released. This has a store owner mode,
+rectifies some issues with calendar objects, supports "working elsewhere" busy
+status, and repairs umlaut garbage in mail previews (new mails). <a
+href="https://github.com/grommunio/gromox/releases/tag/gromox-0.27">Expanded
+notes on GH</a>.</li>
+
+<li><b>2021-06-09</b>. Version 0.25 was released. Since 0.23, a number of logic
+fixes have been made, such as resolving garbled IMAP folder names, and skipping
+bogus properties in PST file imports. <a
+href="https://github.com/grommunio/gromox/releases/tag/gromox-0.25">Expanded
+notes on GH</a>.</li>
+
+<li><b>2021-05-13</b>. Version 0.23 was released. Since 0.20, there have been
+a number of crash fixes, support for send quotas, a new utility
+"gromox-pffimport" for PFF/PST/OST importing, and a change to the default
+mysql_adaptor upgrade check.</li>
+
+</ul>
+
+<h2><a name="dl"></a>Downloads</h2>
+
+<ul>
+<li><a
+href="https://github.com/grommunio/gromox/releases/download/gromox-1.10/gromox-1.10.tar.zst"><tt>gromox-1.10.tar.zst</tt></a>
+(<a
+href="https://github.com/grommunio/gromox/releases/download/gromox-1.10/gromox-1.10.tar.asc"><tt>.asc</tt></a>)</li>
+</ul>
+
+<h2>Further resources</h2>
+
+<ul>
+<li><a href="https://github.com/grommunio/gromox" target="_blank">Github
+page</a></li>
+<li><a
+href="https://github.com/grommunio/gromox/blob/master/doc/install.rst">Installation
+hints</a></li>
+<li><a href="https://github.com/grommunio/gromox/issues"
+target="_blank">Tickets</a></li>
+</ul>
+
+</div>
+</body>
+</html>
