@@ -1,6 +1,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:site_name" content="Gromox project homepage">
+<meta property="og:url" content="https://gromox.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:description" content="Groupware server software">
+<meta property="og:type" content="restaurant">
 <title>Gromox project webpage</title>
 </head>
 <style>
@@ -27,7 +32,7 @@ h1 { font-weight: bold; font-size: 36pt; color: #303030; }
 p { font-size: 16pt; }
 </style>
 
-<body bgcolor="#b0b0c0">
+<body bgcolor="#b8b8c8">
 
 <div class="sidenav" style="padding: 2em;">
 
@@ -62,6 +67,11 @@ href="https://github.com/grommunio/gromox">https://github.com/grommunio/gromox</
 
 <ul>
 
+<li><b>2022-08-30</b>. Version 1.31 was released. Fixes were made to kdb2mt,
+oxcical import routines, and IMAP processing.
+<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.31">See the
+notes for 1.31 on GH</a>.</p>
+
 <li><b>2022-06-12</b>. Version 1.25 was released.
 <a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.25">See the
 notes for 1.25 on GH</a>.</p>
@@ -70,108 +80,15 @@ notes for 1.25 on GH</a>.</p>
 <a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.20">See the
 notes for 1.20 on GH</a>.</p>
 
-<li><b>2022-04-14</b>. Version 1.19 was released. kdb2mt can import ACLs now,
-partially. pff2mt has gained an option to extract a single message. mt2exm has
-gained an option to place singular messages in select folders.
-<i>exmdb_provider</i> and <i>midb</i> have gained config directives for
-facilitating upgrades of the mailbox schemas. <i>exchange_emsmdb</i> has gained
-knobs for controlling the number of objects open at a time. And more…<br />
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.19">Expanded
-notes for 1.19 on GH</a>.<br />
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.18">Expanded
-notes for 1.18 on GH</a>.<br />
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.17">Expanded
-notes for 1.17 on GH</a>.<br />
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.16">Expanded
-notes for 1.16 on GH</a>.<br />
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.15">Expanded
-notes for 1.15 on GH</a>.<br />
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.14">Expanded
-notes for 1.14 on GH</a>.<br />
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.13">Expanded
-notes for 1.13 on GH</a>.<br />
-</li>
-
-<li><b>2022-01-09</b>. Version 1.12 was released. kdb2mt's splice mode was
-improved to detect the mapping for Inbox, and the documentation about MRO field
-caveats was updated. pff2mt has received updates and scans more properties and
-recipients now. Alias resolution in the delivery(8gx) process was changed to no
-longer rely on the extra adaptor(8gx) process.
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.12">Expanded
-notes on GH</a>.</li>
-
-<li><b>2021-12-07</b>. Version 1.10 was released.
-Cached Mode now works with plaintext-only messages and messages whose
-recipients are incomplete.
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.10">Expanded
-notes on GH</a>.</li>
-
-<li><b>2021-11-27</b>. Version 1.9 was released. The kdb2mt importer's
-<tt>-s</tt> option now recognizes public stores. Incoming mail now has
-the Content-Disposition header respected with regards to inline/hidden
-attachments. Modifying embedded messages now properly saves the changes.
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.9">Expanded
-notes on GH</a>.</li>
-
-<li><b>2021-11-13</b>. Version 1.8 was released. A few fixes in vCard parsing,
-folder cleaning and offline mode were made.
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.8">Expanded
-notes on GH</a>.</li></li>
-
-<li><b>2021-11-07</b>. Version 1.7 was released. It improves importing from
-Zarafa/Kopano. Delivery to private shared stores is now recognized.
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.7">Expanded
-notes on GH</a>.</li></li>
-
-<li><b>2021-10-31</b>. Version 1.6 was released. This fixes a number of issues
-with gromox-delivery-queue/gromox-delivery where the older versions may
-generate invalid temporary files and then crash on it. An Out Of Office
-autorespond mechanism was added. The kdb2mt/mt2exm importer has seen updates.
-<a href="https://github.com/grommunio/gromox/releases/tag/gromox-1.6">Expanded
-notes on GH</a>.</li></li>
-
-<li><b>2021-10-08</b>. Version 1.4 was released. This cures an Outlook crash
-in conjunction with OP_MOVE-type Inbox Rules. pff2mt now skips bogus MAPI
-properties and continues rather than exiting. <a
-href="https://github.com/grommunio/gromox/releases/tag/gromox-1.4">Expanded
-notes on GH</a>.</li>
-
-<li><b>2021-09-01</b>. Version 1.2 was released. This includes a much improved
-gromox-kdb2mt (importer for Kopano database/mailboxes) which fixes bugs in the
-named property resolution for appointment/contact data, supports embedded
-message objects, and supports reading gzip attachments. <a
-href="https://github.com/grommunio/gromox/releases/tag/gromox-1.2">Expanded
-notes on GH</a>.</li>
-
-<li><b>2021-08-06</b>. Version 1.0 was released. This comes with a reworked
-PFF command line interface as well as an importer for Kopano mailboxes.</li>
-
-<li><b>2021-07-13</b>. Version 0.27 was released. This has a store owner mode,
-rectifies some issues with calendar objects, supports "working elsewhere" busy
-status, and repairs umlaut garbage in mail previews (new mails). <a
-href="https://github.com/grommunio/gromox/releases/tag/gromox-0.27">Expanded
-notes on GH</a>.</li>
-
-<li><b>2021-06-09</b>. Version 0.25 was released. Since 0.23, a number of logic
-fixes have been made, such as resolving garbled IMAP folder names, and skipping
-bogus properties in PST file imports. <a
-href="https://github.com/grommunio/gromox/releases/tag/gromox-0.25">Expanded
-notes on GH</a>.</li>
-
-<li><b>2021-05-13</b>. Version 0.23 was released. Since 0.20, there have been
-a number of crash fixes, support for send quotas, a new utility
-"gromox-pffimport" for PFF/PST/OST importing, and a change to the default
-mysql_adaptor upgrade check.</li>
-
 </ul>
 
 <h2><a name="dl"></a>Downloads</h2>
 
 <ul>
 <li><a
-href="https://github.com/grommunio/gromox/releases/download/gromox-1.25/gromox-1.25.tar.zst"><tt>gromox-1.25.tar.zst</tt></a>
+href="https://github.com/grommunio/gromox/releases/download/gromox-1.31/gromox-1.31.tar.zst"><tt>gromox-1.31.tar.zst</tt></a>
 (<a
-href="https://github.com/grommunio/gromox/releases/download/gromox-1.25/gromox-1.25.tar.asc"><tt>.asc</tt></a>)</li>
+href="https://github.com/grommunio/gromox/releases/download/gromox-1.31/gromox-1.31.tar.asc"><tt>.asc</tt></a>)</li>
 </ul>
 
 <h2>Further resources</h2>
