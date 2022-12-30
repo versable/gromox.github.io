@@ -45,23 +45,53 @@ p { font-size: 16pt; }
 
 <h1>Welcome to the Gromox project webpage</h1>
 
-<p>Gromox is the central groupware server component of grommunio. It is capable of
-serving as a replacement for Microsoft Exchange and compatibles. Connectivity
-options include RPC/HTTP (Outlook Anywhere), MAPI/HTTP, IMAP, POP3, an
-SMTP-speaking LDA, and a PHP module with a Z-MAPI function subset.</p>
+<p>Gromox is the central groupware server component of grommunio. It is capable
+of serving as a replacement for Microsoft Exchange and compatibles.
+Connectivity options include RPC/HTTP (Outlook Anywhere), MAPI/HTTP, IMAP,
+POP3, an SMTP-speaking LDA, and a PHP module with a MAPI function subset.
+Components can scale-out over multiple hosts.</p>
+
+<p>Gromox is modular and consists of a set of components and programs to
+provide its feature set. This repository includes a number of manual pages, for
+which a rendered version is at <a
+href="https://docs.grommunio.com/man/gromox.7.html"><tt>docs.grommunio.com</tt>.</p>
 
 <p>Gromox relies on other components to provide a sensibly complete mail
-system, such as Postfix as a mail transfer agent, and grommunio-admin for user
-management. A webmail client interface is available with grommunio-web. The
-grommunio Appliance ships these essentials and has a ready-to-run installation
-of Gromox.</p>
+system,</p>
+
+<ul>
+
+<li><a href="https://github.com/grommunio/admin-api">Admin API/CLI</a> (AAPI)
+and, optionally, <a href="https://github.com/grommunio/admin-web">Admin Web
+Interface</a> (AWEB) for user management</a></li>
+
+<li>a mail transfer agent like Postfx, Exim, and more</li>
+
+<li>mail security solutions like rspamd and others (commercial ones
+included)</li>
+
+<li>optionally, User Web Interface via <a
+href="https://github.com/grommunio/grommunio-web">grommunio-web</a></li>
+
+<li>optionally, Exchange ActiveSync (EAS)/mobile device support
+via <a
+href="https://github.com/grommunio/grommunio-sync">grommunio-sync</a></li>
+
+<li>optionally, CalDAV &amp; CardDAV interoperability via
+<a href="https://github.com/grommunio/grommunio-dav">grommunio-dav</a></li>
+
+</ul>
+
+<p>The grommunio Appliance ships these essentials and has a ready-to-run
+installation of Gromox.</p>
 
 <p>Support is available through grommunio GmbH and its partners. See <a
-href="https://grommunio.com/">https://grommunio.com/</a> for details.</p>
+href="https://grommunio.com/"><tt>grommunio.com</tt></a> for details. A
+community forum is at <a
+href="https://community.grommunio.com/"><tt>community.grommunio.com</tt></a>.</p>
 
-<p>The source code repository and technical issue tracker can be found at
-<a
-href="https://github.com/grommunio/gromox">https://github.com/grommunio/gromox</a>.</p>
+<p>The source code repository and technical issue tracker can be found at <a
+href="https://github.com/grommunio/gromox"><tt>https://github.com/grommunio/gromox</tt></a>.</p>
 
 <h2><a name="news"></a>News</h2>
 
