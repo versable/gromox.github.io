@@ -27,22 +27,37 @@ body {
 	font-family: "Fira Sans", sans-serif;
 	margin: 0;
 	display: flex;
+	background-color: #b8b8c8;
 }
 h1 { font-weight: bold; font-size: 36pt; color: #303030; }
 p { font-size: 16pt; }
+img { border: 0; }
+.sidenav { padding: 2em; }
+.main { max-width: 64em; padding: 2em; }
+#latest {
+	background-color: #00cc00;
+	box-shadow: -0.1em -0.3em 0.5em #008000 inset;
+	color: #000000;
+	border-radius: 0.5em;
+	margin: 1em 2.2em 4em 0;
+}
+#latest a {
+	text-decoration: none;
+	color: #000000;
+}
 </style>
 </head>
 
-<body bgcolor="#b8b8c8">
+<body>
 
-<div class="sidenav" style="padding: 2em;">
+<div class="sidenav">
 
 <!-- birds seem to be a recurring theme in mail software, just following suit -->
-<p><img src="gromox_bird_G2.png" border="0"></p>
+<p><img src="gromox_bird_G2.png"></p>
 
 </div>
 
-<div style="max-width: 64em; padding: 2em;">
+<div class="main">
 
 <h1>Welcome to the Gromox project webpage</h1>
 
@@ -94,19 +109,6 @@ href="https://community.grommunio.com/"><tt>community.grommunio.com</tt></a>.</p
 <p>The source code repository and technical issue tracker can be found at <a
 href="https://github.com/grommunio/gromox"><tt>https://github.com/grommunio/gromox</tt></a>.</p>
 
-<style type="text/css">
-#latest {
-	background-color: #00cc00;
-	box-shadow: -0.1em -0.3em 0.5em #008000 inset;
-	color: #000000;
-	border-radius: 0.5em;
-	margin: 1em 2.2em 4em 0;
-}
-#latest a {
-	text-decoration: none;
-	color: #000000;
-}
-</style>
 <center>
 <table id="latest">
 <tr><td align="center" style="padding: 0.2em 2em 0 2em;">Latest Release</td></tr>
