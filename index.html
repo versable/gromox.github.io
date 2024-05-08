@@ -34,16 +34,20 @@ p { font-size: 16pt; }
 img { border: 0; }
 .sidenav { padding: 2em; }
 .main { max-width: 64em; padding: 2em; }
-#latest {
+#latest { display: block; text-align: center; }
+#latest a {
+	display: inline-block;
+	text-decoration: none;
 	background-color: #00cc00;
 	box-shadow: -0.1em -0.3em 0.5em #008000 inset;
 	color: #000000;
 	border-radius: 0.5em;
-	margin: 1em 2.2em 4em 0;
+	margin: 1em 2.2em;
+	padding: 0.4em 4em;
 }
-#latest a {
-	text-decoration: none;
-	color: #000000;
+#latest span {
+	display: block;
+	font-size: 200%;
 }
 </style>
 </head>
@@ -79,7 +83,7 @@ system,</p>
 
 <li><a href="https://github.com/grommunio/admin-api">Admin API/CLI</a> (AAPI)
 and, optionally, <a href="https://github.com/grommunio/admin-web">Admin Web
-Interface</a> (AWEB) for user management</a></li>
+Interface</a> (AWEB) for user management</li>
 
 <li>a mail transfer agent like Postfx, Exim, and more</li>
 
@@ -109,14 +113,12 @@ href="https://community.grommunio.com/"><tt>community.grommunio.com</tt></a>.</p
 <p>The source code repository and technical issue tracker can be found at <a
 href="https://github.com/grommunio/gromox"><tt>https://github.com/grommunio/gromox</tt></a>.</p>
 
-<center>
-<table id="latest">
-<tr><td align="center" style="padding: 0.2em 2em 0 2em;">Latest Release</td></tr>
-<tr><td align="center" style="padding: 0 2em 0.2em 2em; font-size: 200%"><a
-href="https://github.com/grommunio/gromox/releases/download/gromox-2.28/gromox-2.28.tar.zst">2.28
-⬇</a></td>
-</table>
-</center>
+<div id="latest">
+<a href="https://github.com/grommunio/gromox/releases/download/gromox-2.28/gromox-2.28.tar.zst">
+Latest Release
+<span>2.28 ⬇</span>
+</a>
+</div>
 
 <h2><a name="dl"></a>Downloads</h2>
 
