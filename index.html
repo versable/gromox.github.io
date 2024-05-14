@@ -1,158 +1,142 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="Groupware server software">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<meta property="og:site_name" content="Gromox project homepage">
-<meta property="og:url" content="https://gromox.com/">
-<meta property="og:locale" content="en_US">
-<meta property="og:description" content="Groupware server software">
-<meta property="og:type" content="website">
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<title>Gromox project webpage</title>
-<style>
-@font-face {
-	font-family: 'Fira Sans';
-	font-style: normal;
-	font-weight: 400;
-	src: url(va9E4kDNxMZdWfMOD5Vvl4jL.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Fira Sans';
-	font-style: normal;
-	font-weight: 700;
-	src: url(va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	font-display: swap;
-}
-body {
-	font-family: "Fira Sans", sans-serif;
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #b8b8c8;
-}
-h1 { font-weight: bold; font-size: 36pt; color: #303030; }
-p { font-size: 16pt; }
-img { border: 0; }
-.sidenav { padding: 2em; }
-.main { max-width: 64em; padding: 2em; }
-#latest { display: block; text-align: center; }
-#latest a {
-	display: inline-block;
-	text-decoration: none;
-	background-color: #00cc00;
-	box-shadow: -0.1em -0.3em 0.5em #008000 inset;
-	color: #000000;
-	border-radius: 0.5em;
-	margin: 1em 2.2em;
-	padding: 0.4em 4em;
-}
-#latest span {
-	display: block;
-	font-size: 200%;
-}
-.tt { font-family: monospace; }
-</style>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Groupware server software">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:site_name" content="Gromox project homepage">
+  <meta property="og:url" content="https://gromox.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:description" content="Groupware server software">
+  <meta property="og:type" content="website">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href=
+  "/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <title>Gromox project webpage</title>
+  <style>
+  @font-face {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(va9E4kDNxMZdWfMOD5Vvl4jL.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+  }
+  @font-face {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+  }
+  body {
+        font-family: "Fira Sans", sans-serif;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #b8b8c8;
+  }
+  h1 { font-weight: bold; font-size: 36pt; color: #303030; }
+  p { font-size: 16pt; }
+  img { border: 0; }
+  .sidenav { padding: 2em; }
+  .main { max-width: 64em; padding: 2em; }
+  #latest { display: block; text-align: center; }
+  #latest a {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #00cc00;
+        box-shadow: -0.1em -0.3em 0.5em #008000 inset;
+        color: #000000;
+        border-radius: 0.5em;
+        margin: 1em 2.2em;
+        padding: 0.4em 4em;
+  }
+  #latest span {
+        display: block;
+        font-size: 200%;
+  }
+  .tt { font-family: monospace; }
+  </style>
 </head>
-
 <body>
-
-<div class="sidenav">
-
-<!-- birds seem to be a recurring theme in mail software, just following suit -->
-<p><img src="gromox_bird_G2.png" width="128" height="128" alt="Gromox logo"></p>
-
-</div>
-
-<div class="main">
-
-<h1>Welcome to the Gromox project webpage</h1>
-
-<p>Gromox is the central groupware server component of grommunio. It is capable
-of serving as a drop-in replacement for Microsoft Exchange.
-Connectivity options include RPC/HTTP (Outlook Anywhere), MAPI/HTTP, IMAP,
-POP3, an SMTP-speaking LDA, and a PHP module with a MAPI function subset.
-Components can scale-out over multiple hosts.</p>
-
-<p>Gromox is modular and consists of a set of components and programs to
-provide its feature set. This repository includes a number of manual pages, for
-which a rendered version is at <a class="tt"
-href="https://docs.grommunio.com/man/gromox.7.html">docs.grommunio.com</a>.</p>
-
-<p>Gromox relies on other components to provide a sensibly complete mail
-system,</p>
-
-<ul>
-
-<li><a href="https://github.com/grommunio/admin-api">Admin API/CLI</a> (AAPI)
-and, optionally, <a href="https://github.com/grommunio/admin-web">Admin Web
-Interface</a> (AWEB) for user management</li>
-
-<li>a mail transfer agent like Postfx, Exim, and more</li>
-
-<li>mail security solutions like rspamd and others (commercial ones
-included)</li>
-
-<li>optionally, User Web Interface via <a
-href="https://github.com/grommunio/grommunio-web">grommunio-web</a></li>
-
-<li>optionally, Exchange ActiveSync (EAS)/mobile device support
-via <a
-href="https://github.com/grommunio/grommunio-sync">grommunio-sync</a></li>
-
-<li>optionally, CalDAV &amp; CardDAV interoperability via
-<a href="https://github.com/grommunio/grommunio-dav">grommunio-dav</a></li>
-
-</ul>
-
-<p>The grommunio Appliance ships these essentials and has a ready-to-run
-installation of Gromox.</p>
-
-<p>Support is available through grommunio GmbH and its partners. See <a
-href="https://grommunio.com/" class="tt">grommunio.com</a> for details.
-A community forum is at <a class="tt"
-href="https://community.grommunio.com/">community.grommunio.com</a>.</p>
-
-<p>The source code repository and technical issue tracker can be found at <a
-href="https://github.com/grommunio/gromox" class="tt">https://github.com/grommunio/gromox</a>.</p>
-
-<div id="latest">
-<a href="https://github.com/grommunio/gromox/releases/download/gromox-2.28/gromox-2.28.tar.zst">
-Latest Release
-<span>2.28 ⬇</span>
-</a>
-</div>
-
-<h2>Downloads</h2>
-
-<ul>
-<li><a class="tt"
-href="https://github.com/grommunio/gromox/releases/download/gromox-2.28/gromox-2.28.tar.zst">gromox-2.28.tar.zst</a>
-(<a class="tt"
-href="https://github.com/grommunio/gromox/releases/download/gromox-2.28/gromox-2.28.tar.asc">.asc</a>)</li>
-</ul>
-
-</div>
+  <div class="sidenav">
+    <!-- birds seem to be a recurring theme in mail software, just following suit -->
+    <p><img src="gromox_bird_G2.png" width="128" height="128" alt=
+    "Gromox logo"></p>
+  </div>
+  <div class="main">
+    <h1>Welcome to the Gromox project webpage</h1>
+    <p>Gromox is the central groupware server component of grommunio. It is
+    capable of serving as a drop-in replacement for Microsoft Exchange.
+    Connectivity options include RPC/HTTP (Outlook Anywhere), MAPI/HTTP, IMAP,
+    POP3, an SMTP-speaking LDA, and a PHP module with a MAPI function subset.
+    Components can scale-out over multiple hosts.</p>
+    <p>Gromox is modular and consists of a set of components and programs to
+    provide its feature set. This repository includes a number of manual pages,
+    for which a rendered version is at <a class="tt" href=
+    "https://docs.grommunio.com/man/gromox.7.html">docs.grommunio.com</a>.</p>
+    <p>Gromox relies on other components to provide a sensibly complete mail
+    system,</p>
+    <ul>
+      <li>
+        <a href="https://github.com/grommunio/admin-api">Admin API/CLI</a>
+        (AAPI) and, optionally, <a href=
+        "https://github.com/grommunio/admin-web">Admin Web Interface</a> (AWEB)
+        for user management
+      </li>
+      <li>a mail transfer agent like Postfx, Exim, and more</li>
+      <li>mail security solutions like rspamd and others (commercial ones
+      included)</li>
+      <li>optionally, User Web Interface via <a href=
+      "https://github.com/grommunio/grommunio-web">grommunio-web</a>
+      </li>
+      <li>optionally, Exchange ActiveSync (EAS)/mobile device support via
+      <a href="https://github.com/grommunio/grommunio-sync">grommunio-sync</a>
+      </li>
+      <li>optionally, CalDAV & CardDAV interoperability via <a href=
+      "https://github.com/grommunio/grommunio-dav">grommunio-dav</a>
+      </li>
+    </ul>
+    <p>The grommunio Appliance ships these essentials and has a ready-to-run
+    installation of Gromox.</p>
+    <p>Support is available through grommunio GmbH and its partners. See
+    <a href="https://grommunio.com/" class="tt">grommunio.com</a> for details.
+    A community forum is at <a class="tt" href=
+    "https://community.grommunio.com/">community.grommunio.com</a>.</p>
+    <p>The source code repository and technical issue tracker can be found at
+    <a href="https://github.com/grommunio/gromox" class=
+    "tt">https://github.com/grommunio/gromox</a>.</p>
+    <div id="latest">
+      <a href=
+      "https://github.com/grommunio/gromox/releases/download/gromox-2.28/gromox-2.28.tar.zst">
+      Latest Release <span>2.28 ⬇</span></a>
+    </div>
+    <h2>Downloads</h2>
+    <ul>
+      <li>
+        <a class="tt" href=
+        "https://github.com/grommunio/gromox/releases/download/gromox-2.28/gromox-2.28.tar.zst">
+        gromox-2.28.tar.zst</a> (<a class="tt" href=
+        "https://github.com/grommunio/gromox/releases/download/gromox-2.28/gromox-2.28.tar.asc">.asc</a>)
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
