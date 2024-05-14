@@ -1,0 +1,6 @@
+#!/bin/sh
+src=../gromox/doc/mascot.svg
+for i in 16 32 36 48 57 60 70 72 76 96 114 120 144 150 152 180 192 310; do
+	inkscape -o "favicon-${i}x$i.png" -w "$i" -h "$i" "$src"
+done
+optipng *.png
