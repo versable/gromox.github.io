@@ -57,6 +57,8 @@ p { font-size: 16pt; }
 img { border: 0; }
 nav { padding: 2em; }
 main { max-width: 64em; padding: 2em; }
+a, a[download] { font-family: monospace; }
+ul > li > a, #latest a { font-family: "Fira Sans", sans-serif; }
 #latest { display: block; text-align: center; }
 #latest a {
 	display: inline-block;
@@ -72,7 +74,6 @@ main { max-width: 64em; padding: 2em; }
 	display: block;
 	font-size: 200%;
 }
-.tt { font-family: monospace; }
 @media (prefers-color-scheme: dark) {
 	body { color: #eee; background: #121212; }
 	h1 { color: #a2a2a2; }
@@ -102,7 +103,7 @@ Components can scale-out over multiple hosts.</p>
 
 <p>Gromox is modular and consists of a set of components and programs to
 provide its feature set. This repository includes a number of manual pages, for
-which a rendered version is at <a class="tt"
+which a rendered version is at <a
 href="https://docs.grommunio.com/man/gromox.7.html">docs.grommunio.com</a>.</p>
 
 <p>Gromox relies on other components to provide a sensibly complete mail
@@ -135,12 +136,12 @@ href="https://github.com/grommunio/grommunio-sync">grommunio-sync</a></li>
 installation of Gromox.</p>
 
 <p>Support is available through grommunio GmbH and its partners. See <a
-href="https://grommunio.com/" class="tt">grommunio.com</a> for details.
-A community forum is at <a class="tt"
+href="https://grommunio.com/">grommunio.com</a> for details.
+A community forum is at <a
 href="https://community.grommunio.com/">community.grommunio.com</a>.</p>
 
 <p>The source code repository and technical issue tracker can be found at <a
-href="https://github.com/grommunio/gromox" class="tt">https://github.com/grommunio/gromox</a>.</p>
+href="https://github.com/grommunio/gromox">https://github.com/grommunio/gromox</a>.</p>
 
 <div id="latest">
 <a href="https://github.com/grommunio/gromox/releases/download/gromox-2.29/gromox-2.29.tar.zst">
@@ -152,9 +153,9 @@ Latest Release
 <h2>Downloads</h2>
 
 <ul>
-<li><a class="tt" download
+<li><a download
 href="https://github.com/grommunio/gromox/releases/download/gromox-2.29/gromox-2.29.tar.zst">gromox-2.29.tar.zst</a>
-(<a class="tt" download
+(<a download
 href="https://github.com/grommunio/gromox/releases/download/gromox-2.29/gromox-2.29.tar.asc">.asc</a>)</li>
 </ul>
 
